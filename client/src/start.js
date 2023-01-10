@@ -1,8 +1,15 @@
 import { createRoot } from "react-dom/client";
+import App from "./components/App";
+// import SignUp from "./components/SignUp";
 
 const root = createRoot(document.querySelector("main"));
-root.render(<HelloWorld />);
 
-function HelloWorld() {
-    return <div>Hello, World!</div>;
-}
+fetch("/user/id.json")
+    .then((res) => res.json())
+    .then(() => {
+        // if (data.userID) {
+        root.render(<App />);
+        // } else {
+        // root.render(<SignUp />);
+        // }
+    });

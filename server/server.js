@@ -8,8 +8,11 @@ app.use(compression());
 
 app.use(express.static(path.join(__dirname, "..", "client", "public")));
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
+app.get("/user/id.json", (req, res) => {
+    // console.log("SERVER REQUEST SESSION: ", req.session);
+    res.json({
+        userID: null,
+    });
 });
 
 app.get("*", function (req, res) {
