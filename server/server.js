@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
 const compression = require("compression");
 const path = require("path");
 const { PORT = 3001 } = process.env;
+
+//DB
+const { getAllNews } = require("./db");
 
 app.use(compression());
 
@@ -13,6 +17,11 @@ app.get("/user/id.json", (req, res) => {
     res.json({
         userID: null,
     });
+});
+
+app.get("/newsfeed", (req, res) => {
+    console.log("newsfeed");
+    return getAllNews().then((news) => res.json(news));
 });
 
 app.get("*", function (req, res) {
