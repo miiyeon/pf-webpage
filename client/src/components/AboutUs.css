@@ -20,6 +20,11 @@
 .about-cmp img:hover {
     box-shadow: 3px 3px #00000080;
     border: 3px dashed #009dff;
+    cursor: pointer;
+}
+
+.about-cmp img:active {
+    cursor: alias;
 }
 
 h2 {

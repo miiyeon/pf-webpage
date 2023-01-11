@@ -6,14 +6,17 @@ function AboutUs() {
 
     const handleMui = () => {
         console.log("handle mui case");
+        navigate("/muimui");
     };
 
     const handleElvy = () => {
         console.log("handle elvy case");
+        navigate("/elvy");
     };
 
     const handleKing = () => {
         console.log("handle king case");
+        navigate("/kingcat");
     };
 
     return (

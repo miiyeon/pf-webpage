@@ -7,6 +7,9 @@ import AboutUs from "./AboutUs";
 import Kitten from "./Kitten";
 import ContactUs from "./ContactUs";
 import SocialNetwork from "./SocialNetwork";
+import Mui from "./cats/Mui";
+import Elvy from "./cats/Elvy";
+import King from "./cats/King";
 
 function App() {
     return (
@@ -40,6 +43,9 @@ function App() {
                         <Route path="/about" element={<AboutUs />} />
                         <Route path="/kitties" element={<Kitten />} />
                         <Route path="/contacts" element={<ContactUs />} />
+                        <Route path="/muimui" element={<Mui />} />
+                        <Route path="/elvy" element={<Elvy />} />
+                        <Route path="/kingcat" element={<King />} />
                     </Routes>
                 </div>
                 <SocialNetwork />

@@ -29,6 +29,22 @@ app.get("/boss", (req, res) => {
     getTheBossData().then((data) => res.json(data));
 });
 
+// ------------------------------ CATS ------------------------------>>>
+
+app.get("/queenMui", (req, res) => {
+    // console.log("queen Mui page");
+});
+
+app.get("/queenElvy", (req, res) => {
+    // console.log("queen Elvy page");
+});
+
+app.get("/king", (req, res) => {
+    // console.log("king page");
+});
+
+// ------------------------------------------------------------------>>>
+
 app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "..", "client", "index.html"));
 });
