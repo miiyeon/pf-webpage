@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import "animate.css";
 
 import "./App.css";
 import Logo from "./Logo";
@@ -18,7 +19,7 @@ function App() {
                 <nav className="navbar-section">
                     {/* One section for Navigation bar */}
                     <Logo />
-                    <div className="pages">
+                    <div className="pages animate__animated animate__slideInDown">
                         <Link to="/" className="home">
                             Home
                         </Link>

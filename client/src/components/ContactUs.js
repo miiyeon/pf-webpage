@@ -33,7 +33,7 @@ function ContactUs() {
 
     return (
         <div className="contacts-cmp">
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className="contacts-form">
                 <input
                     type="text"
                     name="from_name"
@@ -50,16 +50,18 @@ function ContactUs() {
                 /> */}
                 <input
                     type="text"
-                    name="message"
-                    placeholder="Your message"
-                    value={toSend.message}
-                    onChange={handleChange}
-                />
-                <input
-                    type="text"
                     name="reply_to"
                     placeholder="Your email"
                     value={toSend.reply_to}
+                    onChange={handleChange}
+                />
+                <textarea
+                    className="message-form"
+                    type="text"
+                    name="message"
+                    placeholder="Your message"
+                    rows={14}
+                    value={toSend.message}
                     onChange={handleChange}
                 />
                 <br />

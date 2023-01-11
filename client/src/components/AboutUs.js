@@ -20,7 +20,7 @@ function AboutUs() {
     };
 
     return (
-        <div className="about-cmp">
+        <div className="about-cmp animate__animated animate__fadeIn">
             <h2>About Me</h2>
             <p className="introduction">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed

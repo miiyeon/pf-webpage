@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Home.css";
+import "animate.css";
 
 function Home() {
     const [news, setNews] = useState([]);
@@ -31,7 +32,7 @@ function Home() {
         <div className="home-cmp">
             <h1>Welcome!</h1>
             <br />
-            <div className="news-section">
+            <div className="news-section animate__animated animate__jackInTheBox">
                 {news &&
                     news.map((newsentry) => {
                         console.log(newsentry);
