@@ -1,0 +1,8 @@
+.news-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 22px;
+    margin-top: 3%;
+}

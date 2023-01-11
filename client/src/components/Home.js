@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Home.css";
 
 function Home() {
     const [news, setNews] = useState([]);
@@ -20,7 +21,7 @@ function Home() {
         fetch("/boss")
             .then((res) => res.json())
             .then((data) => {
-                console.log("boss: ", data);
+                // console.log("boss: ", data);
                 setBossData(data);
             })
             .catch((error) => console.log("error at boss fetch: ", error));
@@ -36,7 +37,9 @@ function Home() {
                         return (
                             <div className="entry" key={newsentry.id}>
                                 <section>
-                                    {newsentry.news} {newsentry.created_at}
+                                    {newsentry.news}
+                                    <br />
+                                    Posted: {newsentry.created_at}
                                 </section>
                             </div>
                         );

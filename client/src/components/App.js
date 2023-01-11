@@ -6,6 +6,7 @@ import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Kitten from "./Kitten";
 import ContactUs from "./ContactUs";
+import SocialNetwork from "./SocialNetwork";
 
 function App() {
     return (
@@ -40,6 +41,7 @@ function App() {
                         <Route path="/kitties" element={<Kitten />} />
                         <Route path="/contacts" element={<ContactUs />} />
                     </Routes>
+                    <SocialNetwork />
                 </div>
             </div>
         </BrowserRouter>

@@ -1,0 +1,10 @@
+.network-cmp {
+    position: fixed;
+    bottom: 20px;
+}
+
+.fb-icon,
+.insta-icon,
+.wa-icon {
+    margin: 0 0 0 15px;
+}
