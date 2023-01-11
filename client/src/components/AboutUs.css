@@ -2,7 +2,8 @@
     margin-top: 3%;
 }
 
-.queens {
+.queens,
+.king {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -15,6 +16,7 @@
     border-radius: 15px;
     border: 3px dashed #fff;
     margin: 0 0 0 20px;
+    object-fit: cover;
 }
 
 .about-cmp img:hover {

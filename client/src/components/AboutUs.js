@@ -37,8 +37,12 @@ function AboutUs() {
             <h2>About My Queens</h2>
             {/* picture with onclick event to their page */}
             <div className="queens">
-                <img src="/Faruzan.jpeg" alt="cat1" onClick={handleMui} />
-                <img src="/Faruzan.jpeg" alt="cat1" onClick={handleElvy} />
+                <img src="/muipics/mui02.JPG" alt="cat1" onClick={handleMui} />
+                <img
+                    src="/elvypics/elvy03.jpeg"
+                    alt="cat2"
+                    onClick={handleElvy}
+                />
             </div>
             <h2>About my Tomcat</h2>
             {/* picture with onclick event to his page */}

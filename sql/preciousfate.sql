@@ -21,11 +21,11 @@ CREATE TABLE news(
 
 DROP TABLE IF EXISTS parents;
 
-CREATE TABLE parents(
-    id SERIAL PRIMARY KEY,
-    catname VARCHAR(255) NOT NULL,
-    picture VARCHAR NOT NULL,
-    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+-- CREATE TABLE parents(
+--     id SERIAL PRIMARY KEY,
+--     catname VARCHAR(255) NOT NULL,
+--     picture VARCHAR NOT NULL,
+--     uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
 
-INSERT INTO parents(catname, picture) VALUES ('Mui', 'client\src\components\cats\images\LMZP0048.JPG');
+-- INSERT INTO parents(catname, picture) VALUES ('Mui', 'client\src\components\cats\images\LMZP0048.JPG');

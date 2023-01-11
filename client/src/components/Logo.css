@@ -1,4 +1,8 @@
 .logo-cmp > img {
     width: 150px;
     height: 150px;
+    object-fit: fill;
+    border-radius: 0 0 15px 15px;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px #00000080;
 }

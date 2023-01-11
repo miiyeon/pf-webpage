@@ -12,13 +12,21 @@
 
 .pages {
     width: 100%;
-    height: 30px;
+    height: 60px;
     display: grid;
     grid-template-areas:
         "one two three four"
         "title title title title";
     justify-items: center;
-    margin-top: 18px;
+    padding-top: 15px;
+    border-radius: 0 0 15px 15px;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px #00000080;
+}
+
+.pages > a:hover {
+    text-shadow: 2px 2px #00ffd060;
+    font-variant-caps: all-small-caps;
 }
 
 .home {
@@ -41,6 +49,7 @@
     margin-top: 45px;
     grid-area: title;
     font-size: 35px;
+    text-shadow: 5px 5px #00000080;
 }
 
 .centerContent {
