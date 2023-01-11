@@ -30,6 +30,7 @@ function Home() {
     return (
         <div className="home-cmp">
             <h1>Welcome!</h1>
+            <br />
             <div className="news-section">
                 {news &&
                     news.map((newsentry) => {
@@ -38,6 +39,7 @@ function Home() {
                             <div className="entry" key={newsentry.id}>
                                 <section>
                                     {newsentry.news}
+                                    <br />
                                     <br />
                                     Posted: {newsentry.created_at}
                                 </section>

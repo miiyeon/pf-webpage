@@ -1,3 +1,10 @@
+.app-cmp {
+    display: grid;
+    grid-template-rows: 150px 3fr 50px;
+    width: 100%;
+    height: 100vh;
+}
+
 .navbar-section {
     display: flex;
     flex-flow: row nowrap;

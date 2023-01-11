@@ -12,6 +12,10 @@ function AboutUs() {
         console.log("handle elvy case");
     };
 
+    const handleKing = () => {
+        console.log("handle king case");
+    };
+
     return (
         <div className="about-cmp">
             <h2>About Me</h2>
@@ -35,7 +39,9 @@ function AboutUs() {
             </div>
             <h2>About my Tomcat</h2>
             {/* picture with onclick event to his page */}
-            <img src="/Faruzan.jpeg" alt="cat1" />
+            <div className="king">
+                <img src="/Faruzan.jpeg" alt="cat1" onClick={handleKing} />
+            </div>
             <br />
             <br />
         </div>
