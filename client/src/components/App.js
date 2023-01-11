@@ -41,8 +41,8 @@ function App() {
                         <Route path="/kitties" element={<Kitten />} />
                         <Route path="/contacts" element={<ContactUs />} />
                     </Routes>
-                    <SocialNetwork />
                 </div>
+                <SocialNetwork />
             </div>
         </BrowserRouter>
     );

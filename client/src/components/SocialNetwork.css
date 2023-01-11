@@ -1,6 +1,9 @@
 .network-cmp {
-    position: fixed;
-    bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;
+    height: 65px;
 }
 
 .fb-icon,

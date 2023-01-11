@@ -1,7 +1,45 @@
-import React from "react";
+import "./AboutUs.css";
+import { useNavigate } from "react-router";
 
 function AboutUs() {
-    return <div>AboutUs</div>;
+    const navigate = useNavigate();
+
+    const handleMui = () => {
+        console.log("handle mui case");
+    };
+
+    const handleElvy = () => {
+        console.log("handle elvy case");
+    };
+
+    return (
+        <div className="about-cmp">
+            <h2>About Me</h2>
+            <p className="introduction">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est Lorem ipsum dolor sit amet.
+            </p>
+            <h2>About My Queens</h2>
+            {/* picture with onclick event to their page */}
+            <div className="queens">
+                <img src="/Faruzan.jpeg" alt="cat1" onClick={handleMui} />
+                <img src="/Faruzan.jpeg" alt="cat1" onClick={handleElvy} />
+            </div>
+            <h2>About my Tomcat</h2>
+            {/* picture with onclick event to his page */}
+            <img src="/Faruzan.jpeg" alt="cat1" />
+            <br />
+            <br />
+        </div>
+    );
 }
 
 export default AboutUs;

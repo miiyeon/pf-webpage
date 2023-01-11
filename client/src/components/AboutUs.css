@@ -1,0 +1,27 @@
+.introduction {
+    margin-top: 3%;
+}
+
+.queens {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-cmp img {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    border: 3px dashed #fff;
+    margin: 0 0 0 20px;
+}
+
+.about-cmp img:hover {
+    box-shadow: 3px 3px #00000080;
+    border: 3px dashed #009dff;
+}
+
+h2 {
+    margin: 3% 0 3% 0;
+}
