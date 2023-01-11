@@ -1,5 +1,7 @@
 import "./Cats.css";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router";
+import { FaBackward } from "react-icons/fa";
 
 const pics = [
     "/muipics/mui01.JPG",
@@ -12,12 +14,17 @@ const pics = [
 function Mui() {
     const [pictures, setPictures] = useState([]);
 
+    const navigate = useNavigate();
+
     useEffect(() => {
         setPictures(pics);
     }, []);
 
+    const goBack = () => {
+        navigate(-1);
+    };
     return (
-        <div className="mui-cmp">
+        <div className="cat-cmp">
             <h2>About Queen Mui Mui</h2>
             <section>
                 Name: Dana von Blicharskis Tieroase (Mui Mui)
@@ -26,16 +33,22 @@ function Mui() {
                 <br />
                 Color: Light Amber Silver Classic Torbie White
             </section>
-            <h2>Pictures</h2>
+            <h2 className="pictitle">Pictures</h2>
             <div className="grid-gallery">
                 {pictures &&
                     pictures.map((pic) => {
+                        console.log(pic);
                         return (
-                            <div className="gallery" key={pic.id}>
-                                <img src={pic} alt="mui pic" />
+                            <div className="gallery" key={pic}>
+                                <img src={pic} alt="" />
                             </div>
                         );
                     })}
+            </div>
+            <div className="backButton">
+                <button className="goBack" onClick={goBack}>
+                    <FaBackward /> Back
+                </button>
             </div>
         </div>
     );

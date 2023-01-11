@@ -1,4 +1,4 @@
-.mui-cmp img {
+.cat-cmp img {
     width: 300px;
     height: 195px;
     object-fit: cover;
@@ -10,4 +10,26 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+
+.pictitle {
+    text-align: center;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.backButton > button {
+    background-color: #313193;
+    border: none;
+}
+
+.backButton > button:hover {
+    text-shadow: 3px 2px #00000080;
+    color: #00ffd0;
+    font-variant-caps: all-small-caps;
 }
