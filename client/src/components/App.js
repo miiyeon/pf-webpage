@@ -49,11 +49,11 @@ function App() {
                         <Route path="/muimui" element={<Mui />} />
                         <Route path="/elvy" element={<Elvy />} />
                         <Route path="/kingcat" element={<King />} />
-                        {/* <Route path="/login" element={<Login />} /> */}
+                        <Route path="/login" element={<Login />} />
                     </Routes>
                 </div>
                 <SocialNetwork />
-                {/* <Link to="login">Login</Link> */}
+                <Link to="login">Login</Link>
             </div>
         </BrowserRouter>
     );

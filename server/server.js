@@ -29,6 +29,18 @@ app.get("/boss", (req, res) => {
     getTheBossData().then((data) => res.json(data));
 });
 
+// ------------------------------ LOGIN ----------------------------->>>
+
+app.post("/login", async (req, res) => {
+    try {
+        console.log("request body login ", req.body);
+    } catch (error) {
+        throw Error("Something went wrong at login");
+    }
+});
+
+// ------------------------------------------------------------------>>>
+
 // ------------------------------ CATS ------------------------------>>>
 
 app.get("/queenMui", (req, res) => {
