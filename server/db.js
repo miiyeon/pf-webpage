@@ -12,7 +12,14 @@ function getTheBossData() {
     return db.query(`SELECT * FROM boss`).then((res) => res.rows);
 }
 
+// get user by email
+function getUserByEmail(email) {
+    // console.log("DB EMAIL: ", email);
+    return db.query(`SELECT * FROM boss WHERE email = $1`, [email]);
+}
+
 module.exports = {
     getAllNews,
     getTheBossData,
+    getUserByEmail,
 };
