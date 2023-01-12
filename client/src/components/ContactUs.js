@@ -33,13 +33,17 @@ function ContactUs() {
 
     return (
         <div className="contacts-cmp">
-            <form onSubmit={onSubmit} className="contacts-form">
+            <form
+                onSubmit={onSubmit}
+                className="contacts-form animate__animated animate__bounceInLeft animate__delay-1s"
+            >
                 <input
                     type="text"
                     name="from_name"
                     placeholder="from name"
                     value={toSend.from_name}
                     onChange={handleChange}
+                    required
                 />
                 {/* <input
                     type="text"
@@ -54,6 +58,7 @@ function ContactUs() {
                     placeholder="Your email"
                     value={toSend.reply_to}
                     onChange={handleChange}
+                    required
                 />
                 <textarea
                     className="message-form"
@@ -63,6 +68,7 @@ function ContactUs() {
                     rows={14}
                     value={toSend.message}
                     onChange={handleChange}
+                    required
                 />
                 <br />
                 <button type="submit">Submit</button>

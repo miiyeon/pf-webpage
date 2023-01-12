@@ -24,8 +24,9 @@
 }
 
 .backButton > button {
-    background-color: #313193;
+    background-color: #ffffff00;
     border: none;
+    margin-bottom: 5%;
 }
 
 .backButton > button:hover {

@@ -1,7 +1,8 @@
 .network-cmp {
     padding-bottom: 20px;
     position: relative;
-    margin-left: 38em;
+    margin-left: auto;
+    margin-right: auto;
     width: 162px;
 }
 
@@ -18,4 +19,10 @@
     margin: 0 0 0 15px;
     opacity: 1;
     cursor: crosshair;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .network-cmp {
+        margin-left: 0;
+    }
 }

@@ -1,10 +1,13 @@
 input {
-    color: #000;
+    color: #313193;
     margin-bottom: 2%;
+    border: 2px solid #313193;
 }
 
 .message-form {
+    color: #313193;
     width: 500px;
+    border: 2px solid #313193;
 }
 
 .contacts-form {
@@ -15,7 +18,7 @@ input {
 .contacts-form > button {
     width: 85px;
     margin-left: 200px;
-    background-color: #313193;
+    background-color: #ffffff00;
     border: none;
 }
 
@@ -24,3 +27,21 @@ input {
     color: #00ffd0;
     font-variant-caps: all-small-caps;
 }
+
+/* --------------------------------------- */
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .message-form,
+    input {
+        width: 275px;
+    }
+
+    .contacts-form > button {
+        width: 85px;
+        margin-left: 95px;
+        background-color: #313193;
+        border: none;
+    }
+}
+
+/* --------------------------------------- */

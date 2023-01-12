@@ -32,3 +32,15 @@
 h2 {
     margin: 3% 0 3% 0;
 }
+
+/* ------------------------------------ */
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .queens,
+    .king {
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+}
+
+/* ------------------------------------ */
